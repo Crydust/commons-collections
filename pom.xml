@@ -425,6 +425,20 @@
       </plugin>
       <plugin>
         <artifactId>maven-assembly-plugin</artifactId>
+        <executions>
+          <execution>
+            <id>minimal</id>
+            <phase>package</phase>
+            <goals>
+              <goal>single</goal>
+            </goals>
+            <configuration>
+              <descriptors>
+                <descriptor>src/assembly/forCommonsBeanutils.xml</descriptor>
+              </descriptors>
+            </configuration>
+          </execution>
+        </executions>
         <configuration>
           <descriptors>
             <descriptor>src/assembly/bin.xml</descriptor>

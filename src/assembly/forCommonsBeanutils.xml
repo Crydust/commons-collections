@@ -1,0 +1,34 @@
+<assembly>
+    <id>forCommonsBeanutils</id>
+    <formats>
+        <format>jar</format>
+    </formats>
+    <includeBaseDirectory>false</includeBaseDirectory>
+    <fileSets>
+        <fileSet>
+            <outputDirectory>META-INF</outputDirectory>
+            <includes>
+                <include>LICENSE.txt</include>
+                <include>NOTICE.txt</include>
+            </includes>
+        </fileSet>
+    </fileSets>
+    <dependencySets>
+        <dependencySet>
+            <outputDirectory/>
+            <unpack>true</unpack>
+            <unpackOptions>
+                <includes>
+                    <include>org/apache/commons/collections/Closure.class</include>
+                    <include>org/apache/commons/collections/FastHashMap.class</include>
+                    <include>org/apache/commons/collections/Predicate.class</include>
+                    <include>org/apache/commons/collections/Transformer.class</include>
+                    <include>org/apache/commons/collections/keyvalue/AbstractMapEntry.class</include>
+                    <include>org/apache/commons/collections/comparators/ReverseComparator.class</include>
+                    <include>org/apache/commons/collections/comparators/ComparableComparator.class</include>
+                </includes>
+            </unpackOptions>
+            <useProjectArtifact>true</useProjectArtifact>
+        </dependencySet>
+    </dependencySets>
+</assembly>
